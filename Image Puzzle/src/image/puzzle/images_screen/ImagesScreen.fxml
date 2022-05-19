@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="image.puzzle.images_screen.ImagesScreenController">
+   <children>
+      <Text fill="#5ea3ff" layoutX="268.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose image">
+         <font>
+            <Font name="Calibri Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="78.0" layoutY="25.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back_to_48px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ScrollPane layoutX="16.0" layoutY="78.0" prefHeight="413.0" prefWidth="770.0">
+        <content>
+          <AnchorPane fx:id="imagesBoard" minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="750.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

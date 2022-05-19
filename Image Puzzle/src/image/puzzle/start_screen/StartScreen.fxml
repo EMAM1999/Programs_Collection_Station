@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="image.puzzle.start_screen.StartScreenController">
+   <children>
+      <VBox id="nature" alignment="CENTER" layoutX="68.0" layoutY="81.0" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" spacing="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/nature/1651830583111.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Nature" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox id="painting" alignment="CENTER" layoutX="300.0" layoutY="81.0" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" spacing="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/painting/1651831423435.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Painting" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox id="pets" alignment="CENTER" layoutX="531.0" layoutY="81.0" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" spacing="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/pets/1651704403870.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Pets" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox id="animals" alignment="CENTER" layoutX="68.0" layoutY="291.0" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" spacing="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/animals/1652363395350.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Animals" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox id="disney" alignment="CENTER" layoutX="300.0" layoutY="291.0" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" spacing="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/disney/1652363564782.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Disney" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox id="arts" alignment="CENTER" layoutX="531.0" layoutY="291.0" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" spacing="10.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/arts/1651825181188.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Arts" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="68.0" layoutY="21.0" spacing="150.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back_to_48px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="#5ea3ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose image catigory">
+               <font>
+                  <Font name="Calibri Bold Italic" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
